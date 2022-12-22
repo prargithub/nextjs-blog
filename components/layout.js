@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { Box, Text } from "@chakra-ui/react";
 
 const name = "Prarthana";
 export const siteTitle = "Nextjs blog";
@@ -36,7 +37,13 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Text
+              bgGradient="linear(to-l, #7928CA, #FF0080)"
+              bgClip="text"
+              className={utilStyles.headingXl}
+            >
+              {name}
+            </Text>
           </>
         ) : (
           <>
@@ -52,7 +59,9 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
-                {name}
+                <Text bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text">
+                  {name}
+                </Text>
               </Link>
             </h2>
           </>

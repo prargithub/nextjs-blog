@@ -9,7 +9,13 @@ export default function FirstPost() {
     <>
       <Layout>
         <br />
-        <Box w="100%" bgGradient="linear(to-l, white, #7928CA, #FF0080, white)">
+        <Box
+          w="100%"
+          bgGradient="linear(to-t,#7928CA, #D63FA8)"
+          _hover={{
+            bgGradient: "linear(to-t, blue.200, teal.500)",
+          }}
+        >
           <Text align="center" fontSize="3xl" color="white">
             First Post
           </Text>
@@ -29,6 +35,13 @@ export default function FirstPost() {
           necessitatibus, alias perspiciatis modi ipsum quis vitae accusamus
           temporibus, tempora aliquid!
         </p>
+        <br />
+        <Text bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          porro nisi vitae eligendi, laudantium ad dolorum natus minus eius
+          minima quidem? Reprehenderit, nam voluptatum velit ipsam illo cum
+          numquam labore.
+        </Text>
         <br />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur

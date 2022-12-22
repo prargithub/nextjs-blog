@@ -35,9 +35,11 @@ export default function Home({ allPostsData }) {
         </h1>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg} style={{ color: "orange" }}>
-          Blog
-        </h2>
+        {/* <h2 className={utilStyles.headingLg} style={{ color: "#E35030" }}>
+          BLOGS
+        </h2> */}
+        <br />
+        <br />
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             // <li className={utilStyles.listItem} key={id}>
@@ -48,11 +50,11 @@ export default function Home({ allPostsData }) {
             //   {date}
             // </li>
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`} style={{ color: "#8F21BE" }}>
+                {title}
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              {date} <i>~ {id}</i>
             </li>
             // <li className={utilStyles.listItem} key={id}>
             //   <Link href={`/posts/${id}`}>{title}</Link>
