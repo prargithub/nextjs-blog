@@ -21,18 +21,23 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <br />
         <p>Hey guys, welcome to Prarthana's blog. Enjoy reading!</p>
         <p>
-          This website will be similar to the one shown here:
-          <br />
+          This website will be similar to:{" "}
           <a href="https://nextjs.org/learn">Next.js blog tutorial</a>.
         </p>
         <h1 className="title">
-          Read <Link href="/posts/first-post">my first blog here!</Link>
+          Read{" "}
+          <Link href="/posts/first-post" style={{ color: "#8F21BE" }}>
+            my first blog here!
+          </Link>
         </h1>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg} style={{ color: "orange" }}>
+          Blog
+        </h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             // <li className={utilStyles.listItem} key={id}>

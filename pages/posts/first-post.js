@@ -8,17 +8,12 @@ export default function FirstPost() {
   return (
     <>
       <Layout>
-        <Box
-          w="100%"
-          h="200px"
-          // bgGradient="linear(to-r, green.200, pink.500)"
-        />
-        {/* <Box w="100%" h="200px" background="linear(to-l, #7928CA, #FF0080)">
-          <Head>
-            <title>Blog First Post</title>
-          </Head>
-        </Box> */}
-        <Box w="100%" h="200px" bgGradient="linear(to-l, #7928CA, #FF0080)" />
+        <br />
+        <Box w="100%" bgGradient="linear(to-l, white, #7928CA, #FF0080, white)">
+          <Text align="center" fontSize="3xl" color="white">
+            First Post
+          </Text>
+        </Box>
 
         {/* <Script
         src="https://connect.facebook.net/en_US/sdk.js"
@@ -27,21 +22,20 @@ export default function FirstPost() {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       /> */}
-        <h1>First Post</h1>
+        <br />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam
           nam suscipit maxime similique fuga ab architecto delectus ut
           necessitatibus, alias perspiciatis modi ipsum quis vitae accusamus
           temporibus, tempora aliquid!
         </p>
-        {/* <Text
-          bgGradient="linear(to-l, #7928CA, #FF0080)"
-          bgClip="text"
-          fontSize="6xl"
-          fontWeight="extrabold"
-        >
-          Welcome to Chakra UI
-        </Text> */}
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur
+          cumque impedit eum vitae iusto odio quae voluptatibus! Odit laudantium
+          reiciendis, laboriosam soluta iure a provident ad distinctio nam
+          ducimus!
+        </p>
       </Layout>
     </>
   );

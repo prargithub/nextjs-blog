@@ -62,7 +62,9 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <h2>← Back to home</h2>
+            <h2 style={{ color: "#8F21BE", fontSize: "25px" }}>
+              ← Back to home
+            </h2>
           </Link>
         </div>
       )}
